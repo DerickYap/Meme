@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+  background-color: #95a7f8;
+}
+
+.App-header {  
+  min-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top:0.25rem;
+}
+
+.input-wrap{
+  width:98%;
+  display: flex;
+}
+
+.memes{
+  height:calc(100vh - 3.25rem);
+  overflow:auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.meme{
+  margin:5px;
+  cursor: pointer;
+  position: relative;
+}
+.meme-title{
+  display:none;
+  position: absolute;
+  width:calc(100% - 10px);
+  bottom:4px;
+  left:0;
+  right:0;
+  background:rgba(255,255,255,0.35);
+  font-weight: bold;
+  font-size:0.7rem;
+  padding:2px 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.meme:hover .meme-title{
+  display:block;
+}
+
+html { /* mobile */
+  font-size:16px;
+}
+@media only screen and (min-width: 600px){
+  html { /* tablet */
+      font-size:19px;
+  }
+}
+@media only screen and (min-width: 768px){
+  html { /* desktop */
+      font-size:22px;
+  }
+}
